@@ -19,8 +19,8 @@ function App() {
       {/* <AboutMe/> */}
       {/* <UserProfile/> */}
       {/* <ThumbnailList/> */}
-      {<SignUpForm/>}
-      {/* <FormPage/> */}
+      {/* {<SignUpForm/>} */}
+      <FormPage/>
       {/* <FormHeader/> */}
     </>
   );

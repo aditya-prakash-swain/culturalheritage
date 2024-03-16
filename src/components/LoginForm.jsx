@@ -41,7 +41,7 @@ const authenticateUser = () =>{
         <button className="bg-red-700 hover:bg-red-500 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button" onSubmit={handleSubmit}>
           Sign In
         </button>
-        <a className="inline-block align-baseline text-xs font-bold text-sm text-red-300 hover:text-red-800" href="#">
+        <a className="inline-block align-baseline text-xs font-bold text-sm text-red-300 hover:text-red-800" href="#/">
           Forgot Password?
         </a>
       </div>

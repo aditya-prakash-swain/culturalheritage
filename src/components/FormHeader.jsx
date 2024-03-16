@@ -14,12 +14,12 @@ function FormHeader({ heading,linkName,  linkUrl = "#" }) {
       </div>
       <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
         <span className="p-5 text-red-700">{heading}</span>
-        {/* <Link
+        <Link
           to={linkUrl}
           className="p-5 font-medium text-red-300 hover:text-yellow-500"
         >
           {linkName}
-        </Link> */}
+        </Link>
       </h2>
     </div>
   );

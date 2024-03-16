@@ -2,6 +2,7 @@ import "./App.css";
 import AboutMe from "./components/AboutMe";
 import ContactUs from "./components/ContactUs";
 import FillForm from "./components/FillForm";
+import FormHeader from "./components/FormHeader";
 import FormPage from "./components/FormPage";
 import HeritageDisplay from "./components/HeritageDisplay";
 import LoginForm from "./components/LoginForm";
@@ -18,8 +19,9 @@ function App() {
       {/* <AboutMe/> */}
       {/* <UserProfile/> */}
       {/* <ThumbnailList/> */}
-      {/* {<SignUpForm/>} */}
-      <FormPage/>
+      {<SignUpForm/>}
+      {/* <FormPage/> */}
+      {/* <FormHeader/> */}
     </>
   );
 }

@@ -1,11 +1,10 @@
 import React from "react";
 
-
 export default function FillForm() {
   return (
     <>
       <div className="flex justify-center items-center w-screen h-screen bg-white">
-        <div className="container mx-auto my-4 px-4 lg:px-20">
+        <div className="container mx-auto my-4 px-4 lg:px-20 ">
           <div className="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
             <div className="flex">
               <h1
@@ -19,22 +18,24 @@ export default function FillForm() {
               <input
                 className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 type="text"
-                placeholder="First Name"
+                placeholder="Name of Heritage"
               />
               <input
                 className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                 type="text"
-                placeholder="Last Name"
+                placeholder="Built by"
               />
+
+              <input
+                placeholder="Built in"
+                className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                type="text"
+              />
+
               <input
                 className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                type="email"
-                placeholder="Email"
-              />
-              <input
-                className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                type="number"
-                placeholder="Phone"
+                type="text"
+                placeholder="Location"
               />
             </div>
             <div className="my-4">
@@ -60,37 +61,32 @@ export default function FillForm() {
           >
             <div className="flex flex-col text-white">
               <h1 className="font-bold uppercase text-4xl my-4">
-                Drop in Heritage Data
+                Tell us about Yourself...
               </h1>
 
-              <div className="grid grid-cols-1 gap-3 md:grid-cols-1 mt-5">
+              <div className="grid grid-cols-1 gap-1 md:grid-cols-1">
                 <input
                   className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                   type="text"
-                  placeholder="Name of Heritage"
+                  placeholder="First Name"
                 />
                 <input
                   className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
                   type="text"
-                  placeholder="Built by"
+                  placeholder="Last Name"
                 />
-                <div className="w-full grid grid-cols-2">
-                  <label className="text-xl" htmlFor="builtIn">
-                    Built in :
-                  </label>
-                  <input
-                    id="builtIn"
-                    className="w-full bg-gray-100 col-start-2 text-gray-900 ml-0 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                    type="date"
-                  />
-                </div>
                 <input
                   className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                  type="text"
-                  placeholder="Location"
+                  type="email"
+                  placeholder="Email"
+                />
+                <input
+                  className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                  type="number"
+                  placeholder="Phone"
                 />
 
-               {/* image upload */}
+                {/* image upload */}
               </div>
 
               <div className="flex my-4 w-2/3 lg:w-1/2">

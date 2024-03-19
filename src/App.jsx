@@ -15,12 +15,12 @@ function App() {
     <>
       {/* {<LoginForm />} */}
       {/* <FillForm/> */}
-      {/* <HeritageDisplay/> */}
-      {/* <AboutMe/> */}
+      <HeritageDisplay/>
+       {/* <AboutMe/>  */}
       {/* <UserProfile/> */}
       {/* <ThumbnailList/> */}
       {/* {<SignUpForm/>} */}
-      <FormPage/>
+      {/* <FormPage/> */}
       {/* <Loader/> */}
     
     

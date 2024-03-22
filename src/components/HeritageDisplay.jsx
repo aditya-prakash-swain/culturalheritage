@@ -4,17 +4,17 @@ import Carosel from "./Carosel";
 function HeritageDisplay() {
   return (
 
-      <div className="bg-yellow-50 p-10 mx-4 shadow-md border-l-4 border-r-4 border-red-200" >
+      <div className="bg-yellow-50 p-10 mx-4 shadow-xl " >
         {/* heritage name and author */}
         <h1 className="text-4xl font-bold text-center mb-8" style={{color: "brown"}}>
           Heritage Name -<i>author</i>
         </h1>
-        <hr/>
+        <hr style={{borderColor:'#ad1c23'}}/>
         <br/>
 
         <Carosel />
 
-        <hr/>
+        <hr style={{borderColor:'#ad1c23'}}/>
         <br/>
 
         <div className=" flex flex-col sm:flex-row sm:justify-center mb-8 ">
@@ -37,10 +37,10 @@ function HeritageDisplay() {
             <span className="text-gray-700 mx-2">landmark, state</span>
           </div>
         </div>
-        <hr/>
+        <hr style={{borderColor:'#ad1c23'}}/>
         <br/>
-        <div className="text-center">
-          <h2 className="text-xl font-bold mb-2" style={{color: "brown"}}>Details...</h2>
+        <div className="text-justify">
+          <h2 className="text-xl font-bold mb-2 text-center" style={{color: "brown"}}>Details...</h2>
           <p className="text-gray-700">
             But I must explain to you how all this mistaken idea of denouncing
             of a pleasure and praising pain was born and I will give you a

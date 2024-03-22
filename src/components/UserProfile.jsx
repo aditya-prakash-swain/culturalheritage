@@ -18,7 +18,7 @@ function UserProfile() {
         </div>
         <div
           className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-1/6"
-          style={{ transform: 'translateZ(0px)' }}
+          style={{ transform: "translateZ(0px)" }}
         >
           <svg
             className="absolute bottom-0 overflow-hidden"
@@ -45,7 +45,7 @@ function UserProfile() {
                   <div className="relative">
                     <img
                       alt="..."
-                      src=""  // profile pic
+                      src="" // profile pic
                       className="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px"
                     />
                   </div>
@@ -72,7 +72,9 @@ function UserProfile() {
                       <span className="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
                         10
                       </span>
-                      <span className="text-sm text-blueGray-400">Contributions</span>
+                      <span className="text-sm text-blueGray-400">
+                        Contributions
+                      </span>
                     </div>
                     <div className="lg:mr-4 p-3 text-center">
                       <span className="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
@@ -87,7 +89,7 @@ function UserProfile() {
               </div>
               <div className="text-center mt-12">
                 <h3 className="text-4xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
-                  Name 
+                  Name
                 </h3>
                 <div className="text-sm leading-normal mt-0 mb-2 text-blueGray-400 font-bold uppercase">
                   <i className="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>
@@ -97,7 +99,6 @@ function UserProfile() {
                   <i className="fas fa-briefcase mr-2 text-lg text-blueGray-400"></i>
                   Job Profile
                 </div>
-                
               </div>
               <div className="mt-10 py-10 border-t border-blueGray-200 text-center">
                 <div className="flex flex-wrap justify-center">
@@ -109,24 +110,22 @@ function UserProfile() {
                       warm, intimate feel with a solid groove structure. An
                       artist of considerable range.
                     </p>
-                    
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className=" container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-  
-    <ThumbnailList/>
-  
-    <ThumbnailList/>
-  
-    <ThumbnailList/>
 
-    <ThumbnailList/>
+        {/* all the posts done by author */}
+        <div className="container mx-auto px-4">
+  <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    
+   <ThumbnailList/>
+   <ThumbnailList/>
+   <ThumbnailList/>
   </div>
-
+</div>
 
       </section>
     </main>

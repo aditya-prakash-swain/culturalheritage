@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-
-import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function SignUpForm() {
   const [userName, setUserName] = useState("");
@@ -19,7 +17,7 @@ function SignUpForm() {
 
   return (
     <>
-      <div className="w-full grid place-items-center h-screen">
+      <div className=" max-w-md w-full space-y-3 place-items-center h-screen">
         <form
           onSubmit={handleSubmit}
           className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
@@ -31,20 +29,15 @@ function SignUpForm() {
               src="https://ik.imagekit.io/pibjyepn7p9/Lilac_Navy_Simple_Line_Business_Logo_CGktk8RHK.png?ik-sdk-version=javascript-1.4.3&updatedAt=1649962071315"
             />
           </div>
-          <br/>
+          <br />
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-            <span className="p-5 text-red-700">Sign Up</span>
-            <Link
-              to="/LoginForm"
-              className="p-5 font-medium text-red-300 hover:text-yellow-500 hover:bg-red-700 rounded"
-            >
-              Login
-            </Link>
+            SIGN UP{" "}
           </h2>
-          <br/>
-          
-          <hr/>
-          <br/>
+
+          <br />
+
+          <hr />
+          <br />
           <div className="mb-4">
             <label
               htmlFor="email"
@@ -77,8 +70,7 @@ function SignUpForm() {
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline focus:border-red-500"
             />
           </div>
-          
-          
+
           <div className="mb-4">
             <label
               htmlFor="password"

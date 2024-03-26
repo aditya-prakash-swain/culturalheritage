@@ -14,7 +14,7 @@ function LoginForm() {
 
   return (
     <>
-      <div className="max-w-md w-full space-y-3  place-items-center h-screen">
+      {/* <div className="max-w-md w-full space-y-3  place-items-center h-screen">
         <form className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
           <div className="flex justify-center">
             <img
@@ -64,7 +64,7 @@ function LoginForm() {
               type="password"
               placeholder="******************"
             />
-            {/* <p className="text-red-500 text-xs italic">Please choose a password.</p> */}
+            
           </div>
           <div className="flex items-center justify-between">
             <button
@@ -83,6 +83,48 @@ function LoginForm() {
             </a>
           </div>
         </form>
+      </div> */}
+      <div className="sign-in-htm">
+        <div className="group">
+          <label htmlFor="user" className="label">
+            Username
+          </label>
+          <input
+            id="user"
+            type="text"
+            className="input"
+            value={user}
+            onChange={(e) => setUserName(e.target.value)}
+            required
+          />
+        </div>
+        <div className="group">
+          <label htmlFor="pass" className="label">
+            Password
+          </label>
+          <input
+            id="pass"
+            type="password"
+            className="input"
+            data-type="password"
+            value={pass}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
+        </div>
+        <br />
+        <div className="group">
+          <input
+            type="submit"
+            className="button cursor-pointer hover:text-xl"
+            onSubmit={handleSubmit}
+            value="Sign In"
+          />
+        </div>
+        <div className="hr"></div>
+        <div className="foot-lnk">
+          <a href="#forgot">Forgot Password?</a>
+        </div>
       </div>
     </>
   );

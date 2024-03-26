@@ -17,7 +17,7 @@ function SignUpForm() {
 
   return (
     <>
-      <div className=" max-w-md w-full space-y-3 place-items-center h-screen">
+      {/* <div className=" max-w-md w-full space-y-3 place-items-center h-screen">
         <form
           onSubmit={handleSubmit}
           className="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4"
@@ -114,6 +114,74 @@ function SignUpForm() {
             </button>
           </div>
         </form>
+      </div> */}
+      <div className="sign-up-htm">
+        <div className="group">
+          <label htmlFor="user" className="label">
+            Username
+          </label>
+          <input
+            id="user"
+            type="text"
+            className="input"
+            value={userName}
+            required
+            onChange={(e) => setUserName(e.target.value)}
+          />
+        </div>
+        <div className="group">
+          <label htmlFor="pass" className="label">
+            Password
+          </label>
+          <input
+            id="pass"
+            type="password"
+            className="input"
+            data-type="password"
+            value={password}
+            required
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </div>
+        <div className="group">
+          <label htmlFor="pass" className="label">
+            Repeat Password
+          </label>
+          <input
+            id="pass"
+            type="password"
+            className="input"
+            data-type="password"
+            value={confirmPassword}
+            required
+            onChange={(e) => setConfirmPassword(e.target.value)}
+          />
+        </div>
+        <div className="group">
+          <label htmlFor="pass" className="label">
+            Email Address
+          </label>
+          <input
+            id="pass"
+            type="text"
+            className="input"
+            value={email}
+            required
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <div className="group">
+          <input
+            type="submit"
+            className="button cursor-pointer hover:text-xl"
+            value="Sign Up"
+            onSubmit={handleSubmit}
+          />
+        </div>
+        <div className="hr"></div>
+        <div className="foot-lnk">
+          <label className="cursor-pointer" htmlFor="tab-1">Already got an account?</label>
+        </div>
       </div>
     </>
   );

@@ -40,12 +40,14 @@
 
 // export default FormPage;
 
-import React from "react";
 import "./FormPage.css";
 import LoginForm from "./LoginForm";
 import SignUpForm from "./SignUpForm";
 
 function FormPage() {
+  document.body.style.overflow = "hidden";
+ 
+
   return (
     <div className="w-full h-full bg-gradient-to-r from-red-900 via-yellow-500 to-red-900">
       <div className="login-wrap my-5 ">

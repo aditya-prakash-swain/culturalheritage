@@ -3,11 +3,15 @@ import ContactUs from "./ContactUs";
 
 function AboutMe() {
   return (
-    <div className="w-full min-h-screen flex flex-col items-center justify-around bg-gray-200 bg-cover bg-center" style={{backgroundImage: `url('https://images.pexels.com/photos/1583244/pexels-photo-1583244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`}}>
-      <div className="container mx-auto bg-yellow-100 rounded shadow-lg p-5 sm:w-3/4 md:w-3/4 lg:w-3/4 xl:w-3/4 m-5">
+    <div className="w-full min-h-screen flex flex-col items-center justify-around bg-gray-200 bg-cover bg-center relative overflow-hidden" style={{backgroundImage: `url('https://images.pexels.com/photos/1583244/pexels-photo-1583244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')`}}>
+      {/* Glassmorphism effect */}
+      <div className="absolute inset-0 bg-gray-200 bg-opacity-50 backdrop-filter backdrop-blur-sm"></div>
+
+      <div className="container mx-auto bg-gray-100 bg-opacity-75 rounded-lg shadow-lg p-5 sm:w-3/4 md:w-3/4 lg:w-3/4 xl:w-3/4 m-5 relative z-10">
+        {/* Content */}
         <h1 className="text-xl font-bold text-red-800">About Us</h1>
         <br />
-        <p>
+        <p className="text-gray-800">
           Contrary to popular belief, Lorem Ipsum is not simply random text. It
           has roots in a piece of classical Latin literature from 45 BC, making
           it over 2000 years old. Richard McClintock, a Latin professor at
@@ -26,7 +30,7 @@ function AboutMe() {
           versions from the 1914 translation by H. Rackham.
         </p>
       </div>
-      <ContactUs /> 
+      <ContactUs />
     </div>
   );
 }
